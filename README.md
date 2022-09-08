@@ -17,3 +17,6 @@ Essa ferramenta poderá interagir com algum outro produto, logo, precisa-se de u
 - O histórico de músicas retornado pela API deve ter paginação (10 itens por página).
 
 #### Framework para testar as rotas: Insomnia
+
+#### Prazo final: 22/09
+
