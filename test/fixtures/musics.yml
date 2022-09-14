@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  singer: MyString
+  artist: MyString
 
 two:
   name: MyString
-  singer: MyString
+  artist: MyString
