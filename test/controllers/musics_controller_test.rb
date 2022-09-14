@@ -6,33 +6,43 @@ class MusicsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get musics_url, as: :json
+    get musics_url
+    assert_response :success
+  end
+
+  test "should get new" do
+    get new_music_url
     assert_response :success
   end
 
   test "should create music" do
     assert_difference("Music.count") do
-      post musics_url, params: { music: { artist: @music.artist, name: @music.name } }, as: :json
+      post musics_url, params: { music: { artist: @music.artist, name: @music.name } }
     end
 
-    assert_response :created
+    assert_redirected_to music_url(Music.last)
   end
 
   test "should show music" do
-    get music_url(@music), as: :json
+    get music_url(@music)
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get edit_music_url(@music)
     assert_response :success
   end
 
   test "should update music" do
-    patch music_url(@music), params: { music: { artist: @music.artist, name: @music.name } }, as: :json
-    assert_response :success
+    patch music_url(@music), params: { music: { artist: @music.artist, name: @music.name } }
+    assert_redirected_to music_url(@music)
   end
 
   test "should destroy music" do
     assert_difference("Music.count", -1) do
-      delete music_url(@music), as: :json
+      delete music_url(@music)
     end
 
-    assert_response :no_content
+    assert_redirected_to musics_url
   end
 end
