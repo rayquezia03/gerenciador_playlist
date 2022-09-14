@@ -11,7 +11,7 @@ gem "sqlite3", "~> 1.4"
 gem 'sidekiq', '~> 6.5', '>= 6.5.6'
 gem 'rack-cors', '~> 1.1', '>= 1.1.1'
 gem 'active_model_serializers', '~> 0.10.13'
-gem 'rspotify', '~> 2.11', '>= 2.11.1'
+#gem 'rspotify', '~> 2.11', '>= 2.11.1'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
