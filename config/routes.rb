@@ -6,8 +6,19 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root to: "static_pages#index"
-
   get 'sobre', to: 'static_pages#sobre'
   get 'contato', to: 'static_pages#contato'
+  get 'Adicionar músicas', to: 'musics#new'
+
+  #A serem desenvolvidos: (documentação spotify)
+  #get 'Obter playlist', to: 'playlists/{playlist_id}'
+  #post 'Adicionar músicas à playlist', to: 'playlists/{playlist_id}/tracks'
+  #get 'Obter detalhes da playlist', to: 'playlists/{playlist_id}/tracks'
+  #range_start, insert_before, range_length and snapshot_id
+  #put 'atualizar playlist', to: 'playlists/{playlist_id}/tracks'
+  #delete 'excluir músicas à playlist', to: 'playlists/{playlist_id}/tracks'
+
+  #get 'sobre', to: 'static_pages#sobre'
+  
   resources :users, only: [:new , :create]
 end
