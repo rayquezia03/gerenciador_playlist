@@ -11,6 +11,9 @@ gem 'paranoia', '~> 2.6'
 #gem 'paperclip', '~> 6.1'
 gem 'respec', '~> 0.9.1'
 gem 'jwt', '~> 2.5'
+gem 'sidekiq', '~> 6.5', '>= 6.5.6'
+gem 'rack-cors', '~> 1.1', '>= 1.1.1'
+gem 'active_model_serializers', '~> 0.10.13'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"

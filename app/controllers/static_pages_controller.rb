@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
     def index
-        @empresa = "Tracking Trade"
+        @empresa = "Gerenciador de Playlists da rayane"
     end
 end
